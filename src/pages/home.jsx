@@ -1,24 +1,30 @@
 import React from "react";
+import "../style/styleParts/home.css";
 import Header from "../components/Header";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-const Btn = styled.button`
-  font-size: clamp(0.8rem, 4vw, 1rem);
-  padding: 0.8rem 2rem;
-  color: #000;
-  background: #ffb347;
-  background: linear-gradient(to right, #ffcc33, #ffb347);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-`;
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBasketballBall } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faBehance } from "@fortawesome/free-brands-svg-icons";
 
 export default function homePage() {
   return (
     <div>
-      <div className="home-container">
+      <motion.div
+        className="home-container"
+        initial={{ x: "100vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", delay: 0.5 }}
+      >
+        <div className="socialmedia-icons-container">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+          <FontAwesomeIcon icon={faInstagram} />
+          <FontAwesomeIcon icon={faBasketballBall} />
+          <FontAwesomeIcon icon={faBehance} />
+        </div>
         <div className="title-and-info-container">
           <h1>hello dear</h1>
           <p>
@@ -28,9 +34,11 @@ export default function homePage() {
           </p>
         </div>
         <Link to="/skills">
-          <Btn className="btn"> NEXT </Btn>
+          <motion.button className="btn" animate={{}}>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </motion.button>
         </Link>
-      </div>
+      </motion.div>
       <Header />
     </div>
   );
