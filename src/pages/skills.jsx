@@ -1,37 +1,48 @@
 import React from "react";
 import "../style/styleParts/skills.css";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-
-const Btn = styled.button`
-  font-size: clamp(0.8rem, 4vw, 1rem);
-  padding: 0.8rem 2rem;
-  color: #000;
-  background: #ffb347;
-  background: linear-gradient(to right, #ffcc33, #ffb347);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-`;
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons";
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function skillsPage() {
   return (
-    <div>
-      <div className="skills-container">
-        <div className="title-and-info-container">
-          <h1>hello skills</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-            fugit ex optio dolorum necessitatibus adipisci placeat voluptates
-            porro! Soluta magnam quidem, nesciunt vel illo unde.
-          </p>
-        </div>
+    <div className="whole-black-container  ">
+      <img className="logo" src="/img/logo-black.svg" alt="logo" />
+
+      <div className="flex-container">
         <Link to="/">
-          <Btn>prev</Btn>
+          <motion.button className="btn -btn-bg-grey arrow-right">
+            <FontAwesomeIcon className="arrow-left" icon={faLongArrowAltLeft} />
+          </motion.button>
         </Link>
+        <motion.div className="skills-container">
+          <div className="header-skills">
+            <h1>Skills</h1>
+            <nav className="skills">
+              <span>figma.</span>
+              <span>adobe xd.</span>
+              <span>invision.</span>
+              <span>framer.</span>
+              <span>html.</span>
+              <span>css.</span>
+              <span>javascript.</span>
+            </nav>
+          </div>
+          <div className="skills-indicator">
+            <div className="inner-circle">
+              <span>diiiick</span>
+            </div>
+          </div>
+        </motion.div>
         <Link to="/works">
-          <Btn>next</Btn>
+          <motion.button className="btn  btn-bg-grey arrow-right" animate={{}}>
+            <FontAwesomeIcon
+              className="arrow-right"
+              icon={faLongArrowAltRight}
+            />
+          </motion.button>
         </Link>
       </div>
     </div>

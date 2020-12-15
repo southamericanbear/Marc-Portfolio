@@ -1,3 +1,47 @@
-.skills-container {
-  background-color: paleturquoise !important;
+.flex-container {
+  display: flex;
+  border: solid white 2px;
+  justify-content: space-around;
+}
+
+.header-skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-skills h1,
+.skills span {
+  color: white;
+}
+
+.header-skills h1 {
+  margin: 0;
+  width: 146px;
+  height: 75px;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 75px;
+}
+
+.skills {
+  display: flex;
+}
+
+.skills span {
+  font-size: 24px;
+  line-height: 36px;
+  padding: 15px;
+}
+
+.skills-indicator {
+  border: solid 2px red;
+  height: 500px;
+}
+
+.inner-cirlce {
+  background-color: purple !important;
+  width: 282px;
+  height: 282px;
+  border: 22px solid rgba(180, 180, 180, 0.4);
 }

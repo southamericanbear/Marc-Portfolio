@@ -8,6 +8,11 @@ body {
   background-color: #b4b4b4 !important;
   overflow-x: hidden;
 }
+.whole-black-container {
+  height: 100%;
+  background-color: #0d0d0d !important;
+  overflow-x: hidden;
+}
 
 .btn {
   padding: 0.8rem 2rem;
