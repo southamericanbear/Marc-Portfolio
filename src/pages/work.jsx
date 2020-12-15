@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import "../style/styleParts/work.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -35,7 +34,6 @@ export default function workPage() {
           <Btn>next</Btn>
         </Link>
       </div>
-      <Header />
     </div>
   );
 }

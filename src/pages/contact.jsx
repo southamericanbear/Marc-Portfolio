@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../components/Header";
 import "../style/styleParts/contact.css";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
@@ -32,7 +31,6 @@ export default function contactPage() {
           <Btn>prev</Btn>
         </Link>
       </div>
-      <Header />
     </div>
   );
 }
