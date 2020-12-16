@@ -14,6 +14,14 @@
   color: white;
 }
 
+.skills span {
+  transition: all 0.2s ease-in-out;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+}
+
 .header-skills h1 {
   margin: 0;
   width: 146px;
@@ -40,5 +48,5 @@
 }
 
 .navlinks-skills {
-  margin-top: 25px;
+  margin-top: 35px;
 }

@@ -22,10 +22,20 @@ export default function homePage() {
         <div className="inner-container">
           <div className="social-media-and-info-container">
             <div className="socialmedia-icons-container">
-              <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
-              <FontAwesomeIcon className="icon" icon={faInstagram} />
-              <FontAwesomeIcon className="icon" icon={faBasketballBall} />
-              <FontAwesomeIcon className="icon" icon={faBehance} />
+              <Link className="social-link">
+                {" "}
+                <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+              </Link>
+              <Link className="social-link">
+                {" "}
+                <FontAwesomeIcon className="icon" icon={faInstagram} />
+              </Link>
+              <Link className="social-link">
+                <FontAwesomeIcon className="icon" icon={faBasketballBall} />
+              </Link>
+              <Link className="social-link">
+                <FontAwesomeIcon className="icon" icon={faBehance} />
+              </Link>
             </div>
             <div className="title-and-info-container">
               <h1>I'm marc banchs.</h1>

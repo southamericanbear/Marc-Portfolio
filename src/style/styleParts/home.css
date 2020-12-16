@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   padding: 3.5% 2%;
+  padding-top: 0;
 }
 
 .inner-container {
@@ -73,6 +74,7 @@
   cursor: pointer;
   outline: none;
   font-size: 17px;
+  transition: all 0.2s ease-in;
 }
 
 .btn-container {
@@ -81,4 +83,20 @@
 
 .arrow-right {
   font-size: 2rem;
+}
+
+.info-btn:hover {
+  transform: scale(1.1);
+}
+
+.social-link {
+  color: #0d0d0d !important;
+}
+
+.social-link {
+  transition: all 0.2s ease-in;
+}
+
+.social-link:hover {
+  transform: scale(1.3);
 }
