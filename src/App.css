@@ -26,6 +26,19 @@ body {
   outline: none;
 }
 
+.nextpage-btn-left,
+.nextpage-btn-right {
+  align-self: center;
+}
+
+.nextpage-btn-left {
+  margin-left: 20px;
+}
+
+.nextpage-btn-right {
+  margin-right: 20px;
+}
+
 .logo {
   position: relative;
   left: 20px;
@@ -40,7 +53,7 @@ header {
 header nav {
   border: 3px solid #0d0d0d;
   height: 60px;
-  background: transparent;
+  background: #b4b4b4;
   padding: 0rem calc((100vw - 1300px) / 2);
   display: flex;
   justify-content: center;
@@ -55,4 +68,19 @@ header nav {
   text-decoration: none;
   font-size: 1.1rem;
   line-height: 21px;
+}
+
+.CircularProgressbar,
+.CircularProgressbar-trail {
+  stroke: rgba(180, 180, 180, 0.4) !important;
+}
+
+.CircularProgressbar,
+.CircularProgressbar-path {
+  stroke: #b4b4b4 !important;
+}
+.CircularProgressbar,
+.CircularProgressbar-text {
+  fill: #f5f5f5 !important;
+  stroke: #f5f5f5;
 }

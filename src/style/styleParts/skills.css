@@ -1,7 +1,6 @@
 .flex-container {
   display: flex;
-  border: solid white 2px;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .header-skills {
@@ -32,16 +31,14 @@
   font-size: 24px;
   line-height: 36px;
   padding: 15px;
+  cursor: pointer;
 }
 
 .skills-indicator {
-  border: solid 2px red;
-  height: 500px;
+  display: flex;
+  justify-content: center;
 }
 
-.inner-cirlce {
-  background-color: purple !important;
-  width: 282px;
-  height: 282px;
-  border: 22px solid rgba(180, 180, 180, 0.4);
+.navlinks-skills {
+  margin-top: 25px;
 }

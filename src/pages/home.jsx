@@ -42,7 +42,7 @@ export default function homePage() {
                     download cv.
                   </motion.button>
                 </Link>
-                <Link>
+                <Link to="/contact">
                   <motion.button className="info-btn">
                     contact me.
                   </motion.button>
@@ -65,7 +65,12 @@ export default function homePage() {
           <Link
             to="/"
             className="navLinks"
-            style={{ fontWeight: "700", textDecoration: "underline" }}
+            style={{
+              fontWeight: "700",
+              borderBottom: "5px solid #000",
+              display: "inline-block",
+              paddingBottom: "10px",
+            }}
           >
             Home.
           </Link>
