@@ -82,16 +82,16 @@ export default function homePage() {
               paddingBottom: "10px",
             }}
           >
-            Home.
+            home.
           </Link>
           <Link to="/skills" className="navLinks">
-            Skills.
+            skills.
           </Link>
           <Link to="/works" className="navLinks">
-            Works.
+            portfolio.
           </Link>
           <Link to="/contact" className="navLinks">
-            Contact.
+            contact.
           </Link>
         </nav>
       </header>

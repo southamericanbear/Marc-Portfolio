@@ -213,10 +213,10 @@ export default function SkillsPage() {
       <header className="navlinks-skills" style={{ marginTop: "62px" }}>
         <nav>
           <Link to="/" className="navLinks">
-            Home.
+            home.
           </Link>
           <Link to="/skills" className="navLinks">
-            Skills.
+            skills.
           </Link>
           <Link
             to="/works"
@@ -228,10 +228,10 @@ export default function SkillsPage() {
               paddingBottom: "10px",
             }}
           >
-            Works.
+            portfolio.
           </Link>
           <Link to="/contact" className="navLinks">
-            Contact.
+            contact.
           </Link>
         </nav>
       </header>

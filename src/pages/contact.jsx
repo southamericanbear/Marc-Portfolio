@@ -20,7 +20,7 @@ export default function SkillsPage() {
         animate={{ x: 0 }}
         transition={{ type: "spring", delay: 0.5 }}
       >
-        <Link className="nextpage-btn-left" to="/skills">
+        <Link className="nextpage-btn-left" to="/works">
           <motion.button className="btn -btn-bg-grey arrow-right">
             <FontAwesomeIcon className="arrow-left" icon={faLongArrowAltLeft} />
           </motion.button>
@@ -89,13 +89,13 @@ export default function SkillsPage() {
       <header className="navlinks-skills" style={{ marginTop: "64px" }}>
         <nav>
           <Link to="/" className="navLinks">
-            Home.
+            home.
           </Link>
           <Link to="/skills" className="navLinks">
-            Skills.
+            skills.
           </Link>
           <Link to="/works" className="navLinks">
-            Works.
+            portfolio.
           </Link>
           <Link
             to="/contact"
@@ -107,7 +107,7 @@ export default function SkillsPage() {
               paddingBottom: "10px",
             }}
           >
-            Contact.
+            contact.
           </Link>
         </nav>
       </header>
