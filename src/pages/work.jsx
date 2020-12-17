@@ -33,7 +33,7 @@ export default function SkillsPage() {
             >
               Portfolio.
             </h1>
-            <p>
+            <p style={{ margin: "0", marginBottom: "25px" }}>
               I put my heart and soul in these projects. Now that you're on this
               page, feel free to explore.
             </p>
@@ -210,7 +210,7 @@ export default function SkillsPage() {
           </motion.button>
         </Link>
       </motion.div>
-      <header className="navlinks-skills">
+      <header className="navlinks-skills" style={{ marginTop: "62px" }}>
         <nav>
           <Link to="/" className="navLinks">
             Home.

@@ -1,36 +1,116 @@
 import React from "react";
 import "../style/styleParts/contact.css";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons";
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { Form } from "react-bootstrap";
 
-const Btn = styled.button`
-  font-size: clamp(0.8rem, 4vw, 1rem);
-  padding: 0.8rem 2rem;
-  color: #000;
-  background: #ffb347;
-  background: linear-gradient(to right, #ffcc33, #ffb347);
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-`;
-
-export default function contactPage() {
+export default function SkillsPage() {
   return (
-    <div>
-      <div className="contact-container">
-        <div className="title-and-info-container">
-          <h1>hello contact</h1>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias
-            fugit ex optio dolorum necessitatibus adipisci placeat voluptates
-            porro! Soluta magnam quidem, nesciunt vel illo unde.
-          </p>
-        </div>
-        <Link to="/works">
-          <Btn>prev</Btn>
+    <div className="whole-grey-container  ">
+      <img className="logo" src="/img/logo-black.svg" alt="logo" />
+
+      <motion.div
+        className="flex-container"
+        initial={{ x: "100vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", delay: 0.5 }}
+      >
+        <Link className="nextpage-btn-left" to="/skills">
+          <motion.button className="btn -btn-bg-grey arrow-right">
+            <FontAwesomeIcon className="arrow-left" icon={faLongArrowAltLeft} />
+          </motion.button>
         </Link>
-      </div>
+        <motion.div className="skills-container">
+          <div className="header-skills">
+            <h1
+              className="portfolio"
+              style={{
+                color: "#000",
+                marginRight: "80px",
+              }}
+            >
+              contact.
+            </h1>
+            <p
+              style={{
+                color: "#000",
+                fontWeight: "600",
+                margin: "0",
+                fontSize: ".8rem",
+                height: "40px",
+              }}
+            >
+              <FontAwesomeIcon icon={faEnvelope} /> <b /> <span>Email:</span>{" "}
+              <span style={{ marginRight: "50px", fontWeight: "500" }}>
+                marcbanchsux@gmail.com
+              </span>
+              <FontAwesomeIcon icon={faMapMarkerAlt} /> <b />{" "}
+              <span>Location:</span>{" "}
+              <span style={{ fontWeight: "500" }}>Barcelona, Spain</span>
+            </p>
+          </div>
+          <div className="contat-form-container">
+            <Form
+              style={{
+                background: "black",
+                borderRadius: "25px",
+                display: "flex",
+                flexDirection: "column",
+                padding: "10px",
+              }}
+            >
+              <Form.Group controlId="exampleForm.ControlInput1">
+                <Form.Control type="text" placeholder="Name" />
+              </Form.Group>
+              <Form.Group controlId="exampleForm.ControlInput1">
+                <Form.Control type="email" placeholder="Email" />
+              </Form.Group>
+              <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Control as="textarea" rows={3} placeholder="Message" />
+              </Form.Group>
+              <button className="contact-btn">send</button>
+            </Form>
+          </div>
+        </motion.div>
+        <Link className="nextpage-btn-right" to="/contact">
+          <motion.button className="btn  btn-bg-grey arrow-right" animate={{}}>
+            <FontAwesomeIcon
+              className="arrow-right"
+              icon={faLongArrowAltRight}
+            />
+          </motion.button>
+        </Link>
+      </motion.div>
+      <header className="navlinks-skills" style={{ marginTop: "64px" }}>
+        <nav>
+          <Link to="/" className="navLinks">
+            Home.
+          </Link>
+          <Link to="/skills" className="navLinks">
+            Skills.
+          </Link>
+          <Link to="/works" className="navLinks">
+            Works.
+          </Link>
+          <Link
+            to="/contact"
+            className="navLinks"
+            style={{
+              fontWeight: "700",
+              borderBottom: "5px solid #000",
+              display: "inline-block",
+              paddingBottom: "10px",
+            }}
+          >
+            Contact.
+          </Link>
+        </nav>
+      </header>
     </div>
   );
 }

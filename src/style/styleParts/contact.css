@@ -1,3 +1,52 @@
-.contact-container {
-  background-color: salmon;
+input,
+textarea {
+  background-color: black;
+  margin-left: 0.9px;
+  width: 80%;
+  height: 2rem;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  margin-top: 25px;
+  border: transparent !important;
+  border-bottom: 2px solid white !important;
+}
+
+textarea {
+  resize: none;
+  margin-bottom: 25px;
+}
+
+.contact-btn {
+  margin-right: 25px;
+  width: 120px;
+  height: 50px;
+  color: #fff;
+  background-color: #0d0d0d;
+  border: solid 3px white;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  font-size: 17px;
+  align-self: center;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+}
+
+.form-group {
+  align-self: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+::placeholder {
+  color: white;
 }
